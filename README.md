@@ -14,7 +14,7 @@ h1 {
     color: red;
     font-size: 5em;
 }
--starts with selector "<h1>"
+-starts with selector "< h1>"
 then curly braces {}
 inside braces are declarations in form of "property" and "value" pairs
 property: value
@@ -47,21 +47,21 @@ How to add style sheet (CSS)
 
 External
 With an external style sheet, you can change the look of an entire website by changing just one file
-  Each HTML page must include a reference to the external style sheet file inside the <link> element, 
+  Each HTML page must include a reference to the external style sheet file inside the < link> element, 
 inside the head section.
 EX:
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="mystyle.css">
-</head>
-<body>
+< !DOCTYPE html>
+< html>
+< head>
+< link rel="stylesheet" href="mystyle.css">
+< /head>
+< body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+< h1>This is a heading</ h1>
+< p>This is a paragraph.< /p>
 
-</body>
-</html>
+< /body>
+< /html>
   external style sheet can be written with any text editor, needs .css extension
 should not contain any HTML tags
 EX:"mystyle.css"
@@ -77,12 +77,12 @@ no space between property value and unit
 
 Internal CSS
 internal used if one single html page has unique style
-defined inside <style> element in <head> section
+defined inside < style> element in < head> section
 Ex:
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+< !DOCTYPE html>
+< html>
+< head>
+< style>
 body {
   background-color: linen;
 }
@@ -90,24 +90,24 @@ h1 {
   color: maroon;
   margin-left: 40px;
 }
-</style>
-</head>
-<body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-</body>
-</html>
+</ style>
+< /head>
+< body>
+< h1>This is a heading</ h1>
+< p>This is a paragraph.< /p>
+</ body>
+</ html>
 
 Inline CSS
 used to apply unique style for a single element
 Ex:
-<!DOCTYPE html>
-<html>
-<body>
-<h1 style="color:blue;text-align:center;">This is a heading</h1>
-<p style="color:red;">This is a paragraph.</p>
-</body>
-</html>
+<! DOCTYPE html>
+< html>
+< body>
+< h1 style="color:blue;text-align:center;">This is a heading< /h1>
+< p style="color:red;">This is a paragraph.< /p>
+< /body>
+< /html>
 
 Multple Style sheets
   If some properties have been defined for the same selector (element)in different
@@ -115,14 +115,14 @@ style sheets, the value from the last read style sheet will be used.
   If the internal style is defined after the link to the external style sheet then
 the internal is used
 Ex:
-<head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-<style>
+< head>
+< link rel="stylesheet" type="text/css" href="mystyle.css">
+< style>
 h1 {
   color: orange;
 }
-</style>
-</head>
+< /style>
+< /head>
 
 Cascading Order
   When more than one style specified for an html element they'll cascade into
@@ -154,7 +154,7 @@ Universal selector *, ns|*, *|*, |*
 Type selector elementname
 Class selector .classname
 ID selector #idname
-Attribute selector [attr=value]
+Attribute selector [ attr=value]
 
 Grouping selectors
 Selector list A, B
