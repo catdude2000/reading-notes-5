@@ -228,3 +228,5 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+[Go to TOC](https://catdude2000.github.io/reading-notes/)
